@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="baitap">
+        Bai tap
+    </header>
+
+    <main>
+        <div class="task">
+            <span style="font-weight: bold;">I. Sự khác nhau giữa let và var</span>
+            <br>
+            <br>
+            <ol>
+                <span style="font-size:x-large;">
+                    <p>- JavaScript Block Scope</p>
+                </span>
+                <li>
+                    <p>
+                        Biến được khai báo với từ khóa var không thể có Block Scope.
+
+                        Biến được khai báo bên trong một block (block là code trong dấu ngoặc nhọn {} )
+                        có thể được truy cập từ
+                        bên ngoài block.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Trước ES2015 JavaScript không có Block Scope.
+
+                        Biến được khai báo với từ khóa let có phạm vi Block Scope.
+
+                        Biến được khai báo bên trong một block {} không thể được truy cập từ bên ngoài block
+                    </p>
+                </li>
+            </ol>
+
+            <span style="font-size:x-large;">
+                <p>- Redeclaring (khai báo trùng lặp)</p>
+            </span>
+
+            <ol>
+                <li>
+                    <p>
+                        Khai báo lại một biến bên trong một block với
+                        từ khóa var
+                        sẽ ảnh hưởng biến đó bên ngoài block
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Khai báo
+                        lại một biến bên trong một block với từ khóa
+                        let sẽ không ảnh hưởng đến biến đó bên ngoài block
+                    </p>
+                </li>
+            </ol>
+
+            <span style="font-size:x-large;">
+                <p>- Loop Scope</p>
+            </span>
+
+            <ol>
+                <li>
+                    <p>
+                        Sử dụng var trong một vòng lặp :
+                        <br>
+                        <code style="background-color: #b7acacbf;">
+                                var i = 5;
+                                for (var i = 0; i < 10; i++) {
+                                // một số câu lệnh 
+                                }
+                                // ở đây i là 10
+                            </code>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Sử dụng let trong một vòng lặp :
+                        <br>
+                        <code style="background-color: #b7acacbf;">
+                                let i = 5;
+                                for (let i = 0; i < 10; i++) {
+                                // một số câu lệnh 
+                                }
+                                // ở đây i là 5
+                            </code>
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <div class="task"></div>
+        <div class="task"></div>
+    </main>
+</body>
+
+</html>
