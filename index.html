@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <script src="main.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -49,9 +48,28 @@
         </ul>
         <p>- Sau khi học xong năm ngôn ngữ trên, đồng nghĩa với việc bạn đã có thể bắt đầu tự làm được website. Ngoài ra bạn cũng có thể học thêm các ngôn ngữ khác như jQuery, Bootstrap, Nodejs, Codeigniter,.... để giúp tăng tốc độ phát triển website.</p>
     </main>
+
+    <div class="sub-form">
+        <form name="form-comment"  onsubmit= "return validateFormComment()" method="post">
+            <label for="user-cmt">Name</label>
+            <p id="user-cmt-err"></p>
+            <input type="text" id="user-cmt" name="name-user-cmt" placeholder="Your name..." >
+            <label for="user-email">Email</label>
+            <p id="user-email-err"></p>
+            <input type="email" id="user-email" name="email-user-cmt" placeholder="Your email...">
+
+            <label for="content-submit">Comment</label>
+            <p id="content-submit-err"></p>
+            <textarea name="content" id="content-submit" placeholder="Your cmt..."></textarea>
+            <input type="reset" value="reset">
+            <input type="submit" value="send">
+        </form>
+    </div>
     <footer>
         <div>©2021 Designed by Le Trung Kien</div>
     </footer>
+    <script src="main.js"></script>
+
 </body>
 
 </html>
