@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>form comment</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>
+                Form comment
+            </h2>
+        </div>
+
+        <form action="" class="form" id="form">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Your name..." id="username">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Your email..." id="email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <!-- <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Your name..." id="password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password2">Password check</label>
+                <input type="password" placeholder="Your name..." id="password2">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div> -->
+
+            <div class="form-control">
+                <label for="comment">Comment</label>
+                <textarea name="comment" id="comment" ></textarea>
+                <small>Error message</small>
+            </div>
+
+            <button>submit</button>
+            <input type="reset" id="reset" value="reset">
+            <!-- <button>reset</button> -->
+        </form>
+    </div>
+    <script src='main.js'></script>
+
+</body>
+
+</html>
